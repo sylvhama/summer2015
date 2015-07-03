@@ -1,0 +1,37 @@
+<div ng-include="'/partials/_header.html'"></div>
+<section class="row register">
+  <article class="columns text-center">
+    <div class="fb-like fb-parse" data-href="https://www.facebook.com/finnairkorea" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+    <h3 class="register-title">핀에어를 타고 떠날 유럽행 티켓의 주인공은?</h3>
+    <p><img src="/images/register/register-phone.png" alt="Phone"></p>
+    <form novalidate ng-class="{'check-form': checkRegister}" class="placeholder" role="form" name="myFormRegister" ng-submit="updateUser($event)">
+      <div class="my-form-register row">
+        <div class="large-12 columns">
+          <input id="inputPhone" type="tel" name="inputPhone" ng-model="registerFields.phone" required ng-trim="true" ng-maxlength="13" placeholder="휴대폰 번호를 입력해 주세요">
+          <p ng-show="(error == 'sizeErrorPhone') && checkRegister" class="error error-phone text-right">휴대폰 번호를 입력해 주세요</p>
+        </div>
+        <div class="large-12 columns text-left">
+          <ul class="terms-list">
+            <li>1등 당첨 시 항공 유류세는 본인 부담입니다. (여행가방 당첨 시 제세공과금 22% 본인부담)</li>
+            <li>당첨자 발표 후 기재된 연락처로 일주일간 연락이 되지 않는 경우 문자 고지 후 당첨을 취소합니다.</li>
+            <li>여행 기회는 현금 수령 또는 다른 경품으로 대체할 수 없으며 타인에게 양도할 수 없습니다.</li>
+            <li>여행에 당첨되신 분은 자신의 페이스북 및 기타 SNS 에 자신의 여행후기를 포스팅 해야 하며, 핀에어코리아 페이스북에서는 이를 공유할 수 있는 권리가 있습니다.</li>
+            <li>스타벅스 기프티콘은 7월 15일에 일괄 발송됩니다.</li>
+          </ul>
+        </div>
+        <div class="large-12 columns accept">
+          <label for="checkbox1" class="checkbox-container"><input id="checkbox1" name="checkbox1" type="checkbox" ng-model="registerFields.agree" required>
+            개인정보 수집에 동의합니다. <a class="underline-link color-blue" href="#/terms" target="_blank">개인정보 약관보기</a>
+          </label>
+          <p ng-show="(myFormRegister.checkbox1.$invalid || myFormRegister.checkbox1.$error.required) && checkRegister" class="error">개인정보 수집에 동의하셔야 이벤트 응모가 완료됩니다.</p>
+        </div>
+        <hr class="hr-arrow">
+        <p class="large-12 columns">
+          <button class="my-btn" type="submit">참여완료 <span class="arrow"></span></button>
+        </p>
+      </div>
+    </form>
+  </article>
+</section>
+<div ng-include="'/partials/_prizes.html'"></div>
+<div ng-include="'/partials/_footer.html'"></div>

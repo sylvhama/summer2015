@@ -1,0 +1,60 @@
+<div ng-include="'/partials/_header.html'"></div>
+<section class="row result">
+  <article class="columns text-center">
+    <div class="fb-like fb-parse" data-href="https://www.facebook.com/finnairkorea" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+    <h3 class="result-title">
+      당신에게 가장 어울리는<br>
+      여행지는 "<span class="result-destination">{{destination.destination}}</span>"입니다.
+    </h3>
+  </article>
+  <article class="columns the-destination">
+    <img ng-if="destination.image" class="destination-image" ng-src="/images/result/{{destination.image}}" alt="Destination image">
+    <div class="destination-content">
+      <h2 class="destination-title">{{destination.destination}}</h2>
+      <p class="destination-description">{{destination.description}}</p>
+      <p><a class="destination-link" ng-href="{{destination.link}}"  tracker-type="result-destination" tracker="{{destination.destination}}" target="_blank">
+        <img src="/images/result/result-plane.png" alt="Plane icon">
+        가장 빠른 항공편 보기
+      </a></p>
+    </div>
+  </article>
+  <article class="columns mate text-center">
+    <h3 class="hearth result-title">"<span class="result-destination">{{destination.destination}}</span>"로 함께 떠날 최고의 여행 파트너는?</h3>
+    <div class="my-mate" ng-if="mates.length>0">
+      <p ng-repeat="mate in mates | limitTo:1">
+        {{mate.name}}
+        <br>
+        <img ng-src="https://graph.facebook.com/{{mate.id}}/picture?width=160&height=160" alt="{{mate.id}}">
+      </p>
+      <p class="last-text">함께 여행가자고 말해보세요!</p>
+    </div>
+    <div class="no-mate" ng-if="mates.length==0">
+      <p>아직 친구를 찾지 못했어요.<br>
+        핀에어의 친구들은 어떤 결과가 나왔을까요?</p>
+      <div class="graph">
+        <div class="bar bar-1">
+          <span class="flag-icon flag-icon-{{top3[0].flag}}"></span>
+          <div class="bar-content"></div>
+        </div>
+        <div class="bar bar-2">
+          <span class="flag-icon flag-icon-{{top3[1].flag}}"></span>
+          <div class="bar-content"></div>
+        </div>
+        <div class="bar bar-3">
+          <span class="flag-icon flag-icon-{{top3[2].flag}}"></span>
+          <div class="bar-content"></div>
+        </div>
+      </div>
+      <h4 class="top-title">Top 3 Destinations</h4>
+      <p class="top-1 top-rank">#1 {{top3[0].destination}}</p>
+      <p class="top-rank">#2 {{top3[1].destination}}</p>
+      <p class="top-rank">#2 {{top3[2].destination}}</p>
+      <p class="last-text">내 결과를 친구들과 함께 공유해 주세요.</p>
+    </div>
+    <p><a class="feed-fb my-btn-white" href="#" feed-description="{{destination.description}}" feed-name="{{destination.destination}}" feed-picture="https://summer2015.finnairevent.co.kr/images/result/{{destination.image}}" feed-link="{{shareInfos.urlfb}}">
+      <img src="/images/result/result-share.png" alt="Facebook"> Share on Facebook
+    </a></p>
+    <hr class="hr-arrow">
+    <p><a class="my-btn" href="#/register">응모완료하기 <span class="arrow"></span></a></p>
+  </article>
+</section>

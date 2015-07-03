@@ -1,0 +1,32 @@
+.question-progress .plane img.flying-anim{
+  -webkit-animation-name: flying;
+  -webkit-animation-duration: 0.85s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-name: flying;
+  -moz-animation-duration: 0.85s;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: ease-in-out;
+  animation-name: flying;
+  animation-duration: 0.85s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes flying{
+  10% {-webkit-transform:scale(1);}
+  50% {-webkit-transform:scale(1.5);}
+  80% {-webkit-transform: scale(1);}
+}
+
+@-moz-keyframes flying{
+  10% {-moz-transform:scale(1);}
+  50% {-moz-transform:scale(1.5);}
+  80% {-moz-transform: scale(1);}
+}
+
+@keyframes flying{
+  10% {transform:scale(1);}
+  50% {transform:scale(1.5);}
+  80% {transform: scale(1);}
+}

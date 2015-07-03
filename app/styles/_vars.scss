@@ -1,0 +1,40 @@
+//colors
+$color-white: #fff;
+$color-black: #000;
+$color-dark-grey: #747474;
+$color-dark-grey2: #484848;
+$color-medium-grey: #909090;
+$color-medium-grey2:#cbcbcb;
+$color-light-grey: #eaeaea;
+$color-dark-blue: #0d1973;
+$color-pink: #f42c94;
+$color-dark-pink: #be0867;
+
+//fonts
+$fonts_ko: "Nanum Gothic", "나눔고딕", 'Malgun Gothic', 'Gulim', 'SimSun', 'Arial Unicode', Helvetica, sans-serif;
+$base_font_size: 16px;
+
+//z-index
+$z-1: 1;
+$z-9: 9;
+$z-99: 99;
+$z-999: 999;
+$z-9999: 9999;
+
+
+//My mixins/fucntions
+
+@function my-trim-unit($val) {
+  @return $val / ($val * 0 + 1);
+}
+
+@function my-rem-calc($val) {
+  @return $val / my-trim-unit($base_font_size) * 1rem;
+}
+
+@mixin bg-cover() {
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  background-position: center;
+}

@@ -1,0 +1,112 @@
+[
+  {
+    "id": 10,
+    "a": 10,
+    "b": 0,
+    "destination": "스페인 마드리드",
+    "flag": "es",
+    "image": "spain.jpg",
+    "description": "하루가 짧게 느껴질 정도로, 다양한 문화가 공존하고 있는  '스페인 마드리드' 에서 플라멩코 공연과 함께 열정적인 밤 문화를 꽃 피우세요.",
+    "link": "http://www.finnair.com/kr/ko/destinations/europe/spain/madrid"
+  },
+  {
+    "id": 9,
+    "a": 9,
+    "b": 1,
+    "destination": "체코 프라하",
+    "flag": "pl",
+    "image": "czech.jpg",
+    "description": "아름다운 건축과 풍요로운 역사를 자랑하는 환상적인 도시 '체코 프라하'에서 맛있는 맥주와 함께 동화와 같은 여행을 즐겨 보세요.",
+    "link": "http://www.finnair.com/kr/ko/destinations/europe/czech-republic/prague"
+  },
+  {
+    "id": 8,
+    "a": 8,
+    "b": 2,
+    "destination": "독일 베를린",
+    "flag": "ge",
+    "image": "germany.jpg",
+    "description": "분단된 유럽의 상징이었던  '독일 베를린' 은 지금 유럽에서 가장 다문화적인 도시로 태어나 뛰어난 독창성이 담긴 문화시설과 함께 놀라운 즐거움을 선사합니다.",
+    "link": "http://www.finnair.com/kr/ko/destinations/europe/germany/berlin"
+  },
+  {
+    "id": 7,
+    "a": 7,
+    "b": 3,
+    "destination": "헝가리 부다페스트",
+    "flag": "hu",
+    "image": "hungary.jpg",
+    "description": "중부 유럽에서 가장 아름다운 도시 '헝가리 부다페스트'는 다양한 색상의 중세 가옥, 숨막힐 듯한 도시 전경 등 감탄을 자아낼만큼 신비로운 분위기를 낸답니다.",
+    "link": "http://www.finnair.com/kr/ko/destinations/europe/hungary/budapest"
+  },
+  {
+    "id": 6,
+    "a": 6,
+    "b": 4,
+    "destination": "벨기에 브뤼셀",
+    "flag": "be",
+    "image": "belgium.jpg",
+    "description": "멋진 건축물과 다양한 문화, 맛있는 음식을 경험할 수 있는 도시 '벨기에 브뤼셀'은 유럽에서 가장 아름다운 광장을 갖고 있답니다.",
+    "link": "http://www.finnair.com/kr/ko/destinations/europe/belgium/brussels"
+  },
+  {
+    "id": 5,
+    "a": 5,
+    "b": 5,
+    "destination": "오스트리아 비엔나",
+    "flag": "at",
+    "image": "estonia.jpg",
+    "description": "문화를 사랑하거나 초콜릿을 사랑하는 사람에게 완벽한 도시 '오스트리아 비엔나'에서 유럽 최고의 문화를 경험하세요",
+    "link": "http://www.finnair.com/kr/ko/destinations/europe/austria/vienna"
+  },
+  {
+    "id": 4,
+    "a": 4,
+    "b": 6,
+    "destination": "에스토니아 탈린",
+    "flag": "ee",
+    "image": "austria.jpg",
+    "description": "로맨틱 영화 속 한 장면과 같은 중세 미의 상징 '에스토니아 탈린'은 새벽이 밝아 올 때까지 쉬지 않고 즐거움을 누릴 수 있는 곳입니다.",
+    "link": "http://www.finnair.com/kr/ko/destinations/europe/estonia/tallinn"
+  },
+  {
+    "id": 3,
+    "a": 3,
+    "b": 7,
+    "destination": "핀란드 헬싱키",
+    "flag": "fi",
+    "image": "finland.jpg",
+    "description": "순수한 자연으로 둘러싸인 빛의 도시 ‘핀란드 헬싱키’에서 매력적인 북유럽 디자인과 문화를 느껴보세요.",
+    "link": "http://www.finnair.com/kr/ko/destinations/finland/helsinki"
+  },
+  {
+    "id": 2,
+    "a": 2,
+    "b": 8,
+    "destination": "스위스 제네바",
+    "flag": "ch",
+    "image": "switzerland.jpg",
+    "description": "국제적 휴양도시 '스위스 제네바'는 알프스 산맥을 병풍처럼 감싼 호수 근처에 자리잡고 있어 한가로운 여유와 함께 반고흐,피카소 등의 유명 작품도 감상할 수 있습니다.",
+    "link": "http://www.finnair.com/kr/ko/destinations/europe/switzerland/geneva"
+  },
+  {
+    "id": 1,
+    "a": 1,
+    "b": 9,
+    "destination": "크로아티아 두브로브니크",
+    "flag": "hr",
+    "image": "croatia.jpg",
+    "description": "수세기의 역사가 살아있는 '크로아티아 두브로브니크'에서 청록색 해안과 함께 도심 속 최고의 휴양을 즐기세요.",
+    "link": "http://www.finnair.com/kr/ko/destinations/europe/croatia/dubrovnik"
+  },
+  {
+    "id": 0,
+    "a": 0,
+    "b": 10,
+    "destination": "프랑스 니스",
+    "flag": "fr",
+    "image": "france.jpg",
+    "description": "평생 잊지 못할 휴가를 선사하는 완벽한 휴양지 '프랑스 니스'에서 도시의 흥미와 해변의 편안함을 만끽하세요.",
+    "link": "http://www.finnair.com/kr/ko/destinations/europe/france/nice"
+  }
+]

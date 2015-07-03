@@ -1,0 +1,7 @@
+.prizes * {
+  margin-bottom: 0;
+}
+
+#prize-2 .prize-content {
+  padding-top: 0 !important;
+}

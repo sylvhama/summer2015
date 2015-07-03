@@ -1,0 +1,47 @@
+<div ng-include="'/partials/_header.html'"></div>
+<section class="row game">
+  <article class="question-container columns text-center">
+    <p class="questions-left">Question <span class="pink-number">{{index+1}}</span>/{{total}}</p>
+    <p class="question">{{question.question}}</p>
+    <div class="row question-anim" ng-if="question.image2.length>0">
+      <div class="columns small-6">
+        <div ng-click="nextQuestion(1)" flying-anim class="question-content-type1">
+          <img class="question-image" ng-src="/images/questions/{{question.image1}}" alt="Illustration 1">
+          <p class="question-answer"><img src="/images/questions/questions-check.png" alt="Check"> {{question.answer1}}</p>
+        </div>
+      </div>
+      <div class="columns small-6">
+        <div ng-click="nextQuestion(-1)" flying-anim class="question-content-type1">
+          <img class="question-image" ng-src="/images/questions/{{question.image2}}" alt="Illustration 2">
+          <p class="question-answer"><img src="/images/questions/questions-check.png" alt="Check"> {{question.answer2}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="row question-anim" ng-if="!question.image2">
+      <div class="question-type2" ng-style="mystyle">
+        <div ng-click="nextQuestion(1)" flying-anim class="question-content-type2">
+          <p class="question-answer"><img src="/images/questions/questions-check.png" alt="Check"> {{question.answer1}}</p>
+        </div>
+        <div ng-click="nextQuestion(-1)" flying-anim class="question-content-type2">
+          <p class="question-answer"><img src="/images/questions/questions-check.png" alt="Check"> {{question.answer2}}</p>
+        </div>
+      </div>
+    </div>
+  </article>
+  <div class="clear"></div>
+  <div class="question-progress">
+    <span class="dot" ng-class="{'active-dot': index==0, 'passed-dot': index>0}"><span class="inside-dot"></span></span>
+    <span class="plane" ng-hide="index>=9" ng-style="leftplane"><img src="/images/questions/questions-plane.png" alt="Plane"></span>
+    <span class="dot" ng-class="{'active-dot': index==1, 'passed-dot': index>1}"><span class="inside-dot"></span></span>
+    <span class="dot" ng-class="{'active-dot': index==2, 'passed-dot': index>2}"><span class="inside-dot"></span></span>
+    <span class="dot" ng-class="{'active-dot': index==3, 'passed-dot': index>3}"><span class="inside-dot"></span></span>
+    <span class="dot" ng-class="{'active-dot': index==4, 'passed-dot': index>4}"><span class="inside-dot"></span></span>
+    <span class="dot" ng-class="{'active-dot': index==5, 'passed-dot': index>5}"><span class="inside-dot"></span></span>
+    <span class="dot" ng-class="{'active-dot': index==6, 'passed-dot': index>6}"><span class="inside-dot"></span></span>
+    <span class="dot" ng-class="{'active-dot': index==7, 'passed-dot': index>7}"><span class="inside-dot"></span></span>
+    <span class="dot" ng-class="{'active-dot': index==8, 'passed-dot': index>8}"><span class="inside-dot"></span></span>
+    <span class="dot last-dot" ng-class="{'active-dot': index==9, 'passed-dot': index>9}"><span class="inside-dot"></span></span>
+  </div>
+</section>
+<div ng-include="'/partials/_prizes.html'"></div>
+<div ng-include="'/partials/_footer.html'"></div>
